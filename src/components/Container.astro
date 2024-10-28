@@ -2,8 +2,12 @@
 
 ---
 
-<div
-  class="absolute top-0 z-[-2] bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-25%,rgba(120,119,198,0.3),rgba(255,255,255,0))] flex flex-col w-full md:h-full"
->
+<div class="absolute top-0 z-[-2] main-bg flex flex-col w-full md:h-full">
   <slot />
 </div>
+
+<style>
+  .main-bg {
+    background: url("/public/supportbg.png") no-repeat center center fixed;
+  }
+</style>
