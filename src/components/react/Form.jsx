@@ -25,7 +25,7 @@ const Form = ({ question, options, freeWriting, handleOptionSelect }) => {
       <h3 className="text-xl">{question}</h3>
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="flex flex-col items-center justify-around w-2/4 gap-1.5 md:gap-4"
+        className="flex flex-col items-center justify-around w-2/4 gap-3 md:gap-4"
       >
         <input
           {...register("name", {
@@ -122,7 +122,7 @@ const Form = ({ question, options, freeWriting, handleOptionSelect }) => {
           </p>
         )}
 
-        <div className="mt-2">
+        <div className="mt-2 mb-8">
           <Button type="submit" content="Continuar" />
         </div>
       </form>
