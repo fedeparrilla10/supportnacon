@@ -20,11 +20,12 @@ const Form = ({ question, options, freeWriting, handleOptionSelect }) => {
         alt="Realizar una consulta"
         width={40}
         height={40}
+        className="hidden md:block"
       />
       <h3 className="text-xl">{question}</h3>
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="flex flex-col items-center justify-around w-2/4 gap-4"
+        className="flex flex-col items-center justify-around w-2/4 gap-1.5 md:gap-4"
       >
         <input
           {...register("name", {
@@ -109,14 +110,14 @@ const Form = ({ question, options, freeWriting, handleOptionSelect }) => {
         </div>
 
         {(errors.name || errors.email || errors.phone) && (
-          <p className="text-red-400 text-center">
+          <p className="text-xs md:text-sm text-red-400 text-center">
             Lo sentimos pero necesitamos sus datos para poder contactar con
             usted. Por favor, introduzca su nombre, teléfono y email.
           </p>
         )}
 
         {(errors.terms || errors.privacy) && (
-          <p className="text-red-400 text-center">
+          <p className="text-xs md:text-sm text-red-400 text-center">
             Debe aceptar los términos y condiciones y la política de privacidad
           </p>
         )}

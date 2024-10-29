@@ -13,7 +13,7 @@ const Stepper = ({
   handleOptionSelect,
 }) => {
   return (
-    <section className="w-2/4">
+    <section className="w-full px-4 md:w-2/4">
       {type === "question" && (
         <Question
           question={question}

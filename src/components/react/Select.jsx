@@ -36,7 +36,7 @@ const Select = ({ question, options, products, handleOptionSelect }) => {
                 <img
                   src={product.image}
                   alt={product.name}
-                  className="w-[150px] h-[150px] object-contain"
+                  className="w-[300px] h-[300px] md:w-[150px] md:h-[150px] object-contain"
                 />
                 <p className="pt-4 text-black">{product.name}</p>
               </div>
@@ -44,7 +44,7 @@ const Select = ({ question, options, products, handleOptionSelect }) => {
           );
         })}
       </article>
-      <div className="mt-2">
+      <div className="mt-4 mb-10">
         <Button content="Continuar" />
       </div>
     </section>

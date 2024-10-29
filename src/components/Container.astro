@@ -2,12 +2,14 @@
 
 ---
 
-<div class="absolute top-0 z-[-2] main-bg flex flex-col w-full md:h-full">
+<div class="absolute top-0 z-[-2] main-bg flex flex-col w-full">
   <slot />
 </div>
 
 <style>
   .main-bg {
     background: url("/public/supportbg.png") no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh; /* Asegura que el contenedor tenga al menos la altura de la ventana gráfica */
   }
 </style>

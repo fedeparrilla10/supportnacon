@@ -9,8 +9,10 @@ const Question = ({ question, options, handleOptionSelect }) => {
         width={70}
         height={70}
       />
-      <h3 className="text-xl">{question}</h3>
-      <div className="flex items-center justify-around w-2/4">
+      <h3 className="text-center text-lg md:text-start md:text-xl">
+        {question}
+      </h3>
+      <div className="flex flex-col md:flex-row gap-1 md:gap-0 items-center justify-around md:w-2/4">
         {options.map((option, index) => (
           <Button
             key={index}

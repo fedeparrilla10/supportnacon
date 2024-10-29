@@ -14,7 +14,7 @@ const MainSupport = () => {
   };
 
   return (
-    <section className="flex flex-col items-center justify-center gap-10 pt-24">
+    <section className="flex flex-col items-center justify-center gap-10 pt-12 md:pt-24">
       {questionId === 1 ? (
         <>
           <Hero handleOptionSelect={handleOptionSelect} />
@@ -23,6 +23,7 @@ const MainSupport = () => {
         <Stepper
           type={currentQuestion.type}
           question={currentQuestion.question}
+          message={currentQuestion.message}
           options={currentQuestion.options || []}
           products={products}
           handleOptionSelect={handleOptionSelect}
