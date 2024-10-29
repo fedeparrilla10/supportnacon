@@ -1,6 +1,6 @@
 const Hero = ({ handleOptionSelect }) => {
   return (
-    <>
+    <main className="flex flex-col items-center gap-8">
       <div>
         <p>
           Gracias por contactar con el servicio de ATENCIÓN AL CLIENTE de NACON.
@@ -38,7 +38,7 @@ const Hero = ({ handleOptionSelect }) => {
           <p className="text-xl text-center">Garantía de producto</p>
         </button>
       </div>
-    </>
+    </main>
   );
 };
 
